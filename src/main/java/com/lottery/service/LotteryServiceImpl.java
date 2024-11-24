@@ -13,6 +13,6 @@ public class LotteryServiceImpl extends LotteryService{
         // lottery
         String lottery = carTargetService.lottery(uId);
         // return result
-        return new LotteryResult(uId, lottery, new Date());;
+        return new LotteryResult(uId, lottery, new Date());
     }
 }
