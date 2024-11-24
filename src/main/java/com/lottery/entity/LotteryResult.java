@@ -3,9 +3,12 @@ package com.lottery.entity;
 import java.util.Date;
 
 public class LotteryResult {
-    private String uId;    // 用户ID
-    private String msg;    // 摇号信息
-    private Date dateTime; // 业务时间
+    // 用户ID
+    private String uId;
+    // 摇号信息
+    private String msg;
+    // 业务时间
+    private Date dateTime;
 
     public LotteryResult(String uId, String msg, Date dateTime) {
         this.uId = uId;
