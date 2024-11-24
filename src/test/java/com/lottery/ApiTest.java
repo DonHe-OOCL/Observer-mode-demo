@@ -14,7 +14,7 @@ public class ApiTest {
     @Test
     public void show_result() {
         LotteryService lotteryService = new LotteryServiceImpl();
-        LotteryResult result = lotteryService.draw("2765789109876");
+        LotteryResult result = lotteryService.draw("2765789109877");
         logger.info("测试结果：{}", JSON.toJSONString(result));
     }
 }
