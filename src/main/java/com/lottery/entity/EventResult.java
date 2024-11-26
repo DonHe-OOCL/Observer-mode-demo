@@ -2,7 +2,7 @@ package com.lottery.entity;
 
 import java.util.Date;
 
-public class LotteryResult {
+public class EventResult {
     // 用户ID
     private String uId;
     // 摇号信息
@@ -10,7 +10,7 @@ public class LotteryResult {
     // 业务时间
     private Date dateTime;
 
-    public LotteryResult(String uId, String msg, Date dateTime) {
+    public EventResult(String uId, String msg, Date dateTime) {
         this.uId = uId;
         this.msg = msg;
         this.dateTime = dateTime;

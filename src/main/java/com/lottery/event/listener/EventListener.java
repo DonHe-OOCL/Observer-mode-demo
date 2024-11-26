@@ -1,8 +1,8 @@
 package com.lottery.event.listener;
 
-import com.lottery.entity.LotteryResult;
+import com.lottery.entity.EventResult;
 
 public interface EventListener {
 
-    void doEvent(LotteryResult result);
+    void doEvent(EventResult result);
 }

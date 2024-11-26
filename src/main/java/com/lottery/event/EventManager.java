@@ -1,6 +1,6 @@
 package com.lottery.event;
 
-import com.lottery.entity.LotteryResult;
+import com.lottery.entity.EventResult;
 import com.lottery.event.listener.EventListener;
 
 import java.util.ArrayList;
@@ -18,7 +18,7 @@ public class EventManager {
     }
 
     public enum EventType {
-        MQ, Message
+        BookingShipment, Message
     }
 
     /**
@@ -46,7 +46,7 @@ public class EventManager {
      * @param eventType 事件类型
      * @param result    结果
      */
-    public void notify(Enum<EventType> eventType, LotteryResult result) {
+    public void notify(Enum<EventType> eventType, EventResult result) {
         List<EventListener> users = listeners.get(eventType);
         for (EventListener listener : users) {
             listener.doEvent(result);
